@@ -1,0 +1,36 @@
+.container { 
+    display: grid; 
+    grid-gap: 5px; 
+
+    grid-template-rows: repeat(6, auto);
+    grid-auto-flow: column;
+}
+.fila1 {
+    grid-row: span 12;
+}
+.fila2 {
+    grid-row: span 6;
+}
+.fila3 {
+    grid-row: span 4;
+}
+.fila4 {
+    grid-row: span 3;
+}
+.fila5 {
+    grid-row: span 2;
+}
+
+div div {
+    /*border: 1px solid black;*/
+
+    border-radius: 1em;
+    background-color: orange;
+    font-size: 1em;
+    color: black;
+
+
+    text-align: center;
+    padding: 0.5em;
+
+}

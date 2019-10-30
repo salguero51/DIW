@@ -1,0 +1,26 @@
+
+.celda4 {
+    grid-row: span 5;
+}
+.celda6 {
+    grid-row: span 3;
+}
+.celda12 {
+    grid-column: span 3
+}
+
+.cell { 
+    background-color: white; 
+    color: #333; 
+    border-radius: 10px; 
+    border: 2px solid black;
+    padding: 20px; 
+    font-size: 20px; 
+} 
+.container { 
+    display: grid; 
+    grid-gap:5px; 
+    grid-template-columns: 200px 500px 250px 250px;
+    grid-template-rows: 150px 300px auto auto 150px;
+
+}
