@@ -1,0 +1,71 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: gray;
+}
+header {
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 10em;
+}
+header h1 {
+    color: white;
+    background-color: rgba(100,10,10,0.5);
+    font-size: 4em;
+}
+nav {
+    border-radius: 10px;
+    background-color: #444;
+    padding: 3px;
+}
+nav div {
+    display: block;
+    background-color: olive;
+    border-radius: 10px;
+    border: 2px solid #444;
+    text-align: center;
+}
+nav div a {
+    font-size: 1.3em;
+    font-style: normal;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+article, main, .contacto {
+    background-color: silver;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    padding-top: 0px;
+}
+article h4 {
+    text-align: center;
+}
+article { 
+ text-align: justify;
+}
+.foto {
+    width: 30%;
+    margin: 10px
+}
+.foto img {
+    width: 100%;
+    border-radius: 10px;
+}
+footer {
+    background-color: #555;
+    border-radius: 10px;
+    margin: 5px;
+}
+footer div {
+    /*! border: 2px solid red; */
+    color: white;
+    text-align: center;
+}

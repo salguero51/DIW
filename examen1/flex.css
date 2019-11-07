@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+nav{
+  display: flex;
+}
+nav div{
+  flex-grow: 1;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+.foto{
+    flex-grow: 1;
+}
