@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List Group Nested</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        /* CSS used here will be applied after bootstrap.css */
+        .menu-ico-collapse {
+            margin-left: 4px;
+        }
+
+        .list-group-submenu .list-group-item:first-child {
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+        }
+
+        .list-group-submenu .list-group-item:last-child {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a class="list-group-item text-center active" data-remote="true" href="#" id="categoria_0">
+                        Todas Categorias
+                    </a>
+                    <a class="list-group-item" data-remote="true" href="#" id="categoria_14"
+                        style="padding-left: 25px;">
+                        <span class="fa fa-bomb fa-lg fa-fw"></span>
+                        <span style="margin-left: 25px;">Adulto</span>
+                    </a>
+                    <a class="list-group-item" data-remote="true" href="#" id="categoria_1" style="padding-left: 25px;">
+                        <span class="fa fa-cutlery fa-lg fa-fw"></span>
+                        <span style="margin-left: 25px;">Alimentação</span>
+                    </a>
+                    <a class="list-group-item" data-remote="true" href="#" id="categoria_2" style="padding-left: 25px;">
+                        <span class="fa fa-automobile fa-lg fa-fw"></span>
+                        <span style="margin-left: 25px;">Automotivo</span>
+                    </a>
+                    <a class="list-group-item" data-remote="true" href="#" id="categoria_3" style="padding-left: 25px;">
+                        <span class="fa fa-female fa-lg fa-fw"></span>
+                        <span style="margin-left: 25px;">Beleza</span>
+                    </a>
+
+                    <a class="list-group-item" data-remote="true" href="#sub_categoria_4" id="categoria_4"
+                        data-toggle="collapse" data-parent="#sub_categoria_4" style="padding-left: 25px;">
+                        <span class="fa fa-shopping-cart fa-lg fa-fw"></span>
+                        <span style="margin-left: 25px;">Compras</span>
+                        <span class="menu-ico-collapse"><i class="fa fa-chevron-down"></i></span>
+                    </a>
+
+                    <div class="collapse list-group-submenu" id="sub_categoria_4">
+                        <a href="#" class="list-group-item sub-item" data-parent="#sub_categoria_4"
+                            style="padding-left: 78px;">SubSubPos1</a>
+                        <a href="#" class="list-group-item sub-item" data-parent="#sub_categoria_4"
+                            style="padding-left: 78px;">SubSubPos2</a>
+                        <a href="#" class="list-group-item sub-item" data-parent="#sub_categoria_4"
+                            style="padding-left: 78px;">SubSubPos3</a>
+                        <a href="#" class="list-group-item sub-item" data-parent="#sub_categoria_4"
+                            style="padding-left: 78px;">SubSubPos4</a>
+                    </div>
+
+                    <a class="list-group-item" data-remote="true" href="#" id="categoria_6" style="padding-left: 25px;">
+                        <span class="fa fa-graduation-cap fa-lg fa-fw"></span>
+                        <span style="margin-left: 25px;">Educação</span>
+                    </a>
+                    <a class="list-group-item" data-remote="true" href="#" id="categoria_7" style="padding-left: 25px;">
+                        <span class="fa fa-gamepad fa-lg  fa-fw"></span>
+                        <span style="margin-left: 25px;">Entretenimeto</span>
+                    </a>
+                    <a class="list-group-item" data-remote="true" href="#" id="categoria_8" style="padding-left: 25px;">
+                        <span class="fa fa-futbol-o fa-lg fa-fw"></span>
+                        <span style="margin-left: 25px;">Lazer</span>
+                    </a>
+                    <a class="list-group-item" data-remote="true" href="#" id="categoria_13"
+                        style="padding-left: 25px;">
+                        <span class="fa fa-beer fa-lg fa-fw"></span>
+                        <span style="margin-left: 25px;">Night</span>
+                    </a>
+                    <a class="list-group-item" data-remote="true" href="#" id="categoria_9" style="padding-left: 25px;">
+                        <span class="fa fa-heart fa-lg fa-fw"></span>
+                        <span style="margin-left: 25px;">Saúde</span>
+                    </a>
+                    <a class="list-group-item" data-remote="true" href="#" id="categoria_10"
+                        style="padding-left: 25px;">
+                        <span class="fa fa-lock fa-lg fa-fw"></span>
+                        <span style="margin-left: 25px;">Seguros</span>
+                    </a>
+                    <a class="list-group-item" data-remote="true" href="#" id="categoria_11"
+                        style="padding-left: 25px;">
+                        <span class="fa fa-wrench fa-lg fa-fw"></span>
+                        <span style="margin-left: 25px;">Serviços</span>
+                    </a>
+                    <a class="list-group-item" data-remote="true" href="#" id="categoria_12"
+                        style="padding-left: 25px;">
+                        <span class="fa fa-suitcase fa-lg fa-fw"></span>
+                        <span style="margin-left: 25px;">Viagem e Turismo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
