@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+    button {
+        height: 50px;
+        width: 50px;
+
+        background-color: white;
+        border: 2px solid black ;
+        border-radius: 50%;
+    }
+    </style>
+    <script>
+    function forwardRewind(param) {
+        var player = document.getElementById("player");
+        player.currentTime += param;
+    }
+    </script>
+</head>
+
+<body> 
+    <video id="player" autoplay src="c3Bmo0j.mp4" autoplay ></video>
+    <div>
+        <button onclick="document.getElementById('player').play() "><i class="material-icons">play_arrow</i></button> 
+        <button onclick="document.getElementById('player').pause() "><i class="material-icons">pause</i></button>
+        <button onclick="forwardRewind(-2)"><i class="material-icons">fast_rewind</i></button> 
+        <button onclick="forwardRewind(2) "><i class="material-icons">fast_forward</i></button> 
+        <button onclick="document.getElementById('player').volume+=0.1"><i class="material-icons">volume_up</i></button>
+        <button onclick="document.getElementById('player').volume-=0.1"><i class="material-icons">volume_down</i></button>
+    </div>
+</body>
+
+</html>
