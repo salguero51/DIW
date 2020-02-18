@@ -1,0 +1,50 @@
+.gris {
+  filter: grayscale(100%);
+}
+.gris:hover {
+  transition: all 3s linear;
+  filter: grayscale(100%);
+}
+.desenfoque {
+  filter: blur(3px);
+}
+.viejo {
+  filter: sepia(100%);
+}
+.satur {
+  filter: saturate(400%);
+}
+.opa {
+  filter: opacity(25%);
+}
+.brillo {
+  filter: brightness(150%);
+}
+.invertido {
+  filter: invert(100%);
+}
+.contraste {
+  filter: contrast(200%);
+}
+
+.rotac {
+  filter: hue-rotate(90deg);
+}
+.invertido {
+  filter: invert(100%);
+}
+
+.sombraenpng:hover {
+  filter: drop-shadow(2px 2px 5px #555);
+}
+
+.gris {
+  filter: grayscale(100%) blur(3px);
+}
+
+
+.black {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
